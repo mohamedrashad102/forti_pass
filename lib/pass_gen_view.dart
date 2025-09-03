@@ -250,6 +250,7 @@ class _PassGenViewState extends State<PassGenView>
   Widget _buildHeader(ThemeData theme) {
     return Column(
       children: [
+        const SizedBox(height: 20),
         Container(
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
