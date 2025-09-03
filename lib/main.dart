@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'pass_gen_view.dart';
+import 'views/pass_gen_view.dart';
 
 void main() {
-  runApp(const FortiPass());
+  runApp(const ProviderScope(child: FortiPass()));
 }
 
 class FortiPass extends StatelessWidget {
@@ -11,10 +12,13 @@ class FortiPass extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
+    return MaterialApp(
       title: 'FortiPass',
-      home: PassGenView(),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: const PassGenView(),
     );
   }
 }
