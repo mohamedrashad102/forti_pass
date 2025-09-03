@@ -27,9 +27,7 @@ The password generation process is based on a combination of your **Master Key**
 This deterministic process ensures that you can always regenerate the same password by providing the same inputs, without ever needing to save the password itself.
 
 ## Screenshots
-<img src="assets/screens/splash.png" alt="Splash" width="300"/>
-<img src="assets/screens/home.png" alt="Home" width="300"/>
-<img src="assets/screens/password.png" alt="Password" width="300"/>
+<img src="assets/screens/splash.png" alt="Splash" width="300"/> <img src="assets/screens/home.png" alt="Home" width="300"/> <img src="assets/screens/password.png" alt="Password" width="300"/>
 
 
 ## ⚙️ Getting Started
@@ -61,17 +59,34 @@ This deterministic process ensures that you can always regenerate the same passw
 
 ```
 lib/
-├── main.dart           # App entry point and MaterialApp setup.
-└── pass_gen_view.dart  # Main UI and logic for the password generator.
+├── main.dart
+├── models/
+│   └── password_state.dart
+├── providers/
+│   └── password_provider.dart
+├── views/
+│   └── pass_gen_view.dart
+└── widgets/
+    ├── action_buttons.dart
+    ├── clear_button.dart
+    ├── generate_button.dart
+    ├── header_widget.dart
+    ├── master_key_field.dart
+    ├── password_card.dart
+    ├── password_options_card.dart
+    ├── password_output_section.dart
+    ├── password_strength_indicator.dart
+    └── website_field.dart
 ```
 
 - `main.dart`: Initializes the Flutter app and sets up the main theme and home widget.
-- `pass_gen_view.dart`: Contains the stateful widget for the password generation screen, including all UI components, animations, and the core password generation logic.
+- `models/password_state.dart`: Contains the state model for the password generator, built using Freezed.
+- `providers/password_provider.dart`: Contains the `StateNotifier` for managing the password generation state using Riverpod.
+- `views/pass_gen_view.dart`: The main screen of the application, composed of smaller widgets.
+- `widgets/`: Contains all the reusable UI components for the password generation view.
 
 ## 🤝 Contributing
 
 Contributions are welcome! If you have ideas for improvements or find any bugs, feel free to open an issue or submit a pull request.
 
----
-
-*This README was generated with assistance from an AI tool.*
+## 🌟 Thank You
