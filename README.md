@@ -27,8 +27,9 @@ The password generation process is based on a combination of your **Master Key**
 This deterministic process ensures that you can always regenerate the same password by providing the same inputs, without ever needing to save the password itself.
 
 ## Screenshots
-![assets/screens/home.png](assets/screens/home.png)
-
+<img src="assets/screens/splash.png" alt="Splash" width="300"/>
+<img src="assets/screens/home.png" alt="Home" width="300"/>
+<img src="assets/screens/password.png" alt="Password" width="300"/>
 
 
 ## ⚙️ Getting Started
