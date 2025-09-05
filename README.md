@@ -29,6 +29,9 @@ This deterministic process ensures that you can always regenerate the same passw
 ## Screenshots
 <img src="assets/screens/cover.png" alt="Splash">
 
+## 📱 App Link
+
+Try FortiPass now: [https://t.me/SolveIt102/17](https://t.me/SolveIt102/17)
 
 ## ⚙️ Getting Started
 
